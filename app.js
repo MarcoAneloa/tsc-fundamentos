@@ -1,10 +1,13 @@
 "use strict";
-//nombre tiene que ser una variavle
-//de tipo texto
-function saludar(nombre) {
-    console.log("Hola " + nombre);
+/*let mensaje = "hola";
+
+if(true){
+    let mensaje="adios";
 }
-var wolverine = {
-    nombre: "Logan wolverine .."
-};
-saludar(wolverine.nombre);
+
+console.log(mensaje);*/
+var OPCIONES = "TODAS";
+if (true) {
+    var OPCIONES_1 = "ninguna";
+}
+console.log(OPCIONES);

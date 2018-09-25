@@ -1,13 +1,15 @@
-//nombre tiene que ser una variavle
-//de tipo texto
-function saludar(nombre:String){
-    console.log("Hola " + nombre);
+/*let mensaje = "hola";
+
+if(true){
+    let mensaje="adios";
 }
 
-var wolverine={
-    nombre: "Logan wolverine .."
-};
+console.log(mensaje);*/
 
+const OPCIONES="TODAS";
 
-saludar(wolverine.nombre);
+if(true){
+    const OPCIONES="ninguna";
+}
 
+console.log(OPCIONES);
