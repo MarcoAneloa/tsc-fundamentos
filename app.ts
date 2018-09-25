@@ -18,7 +18,7 @@ if(true){
 console.log(OPCIONES);*/
 
 //TIPOS
-let nombre:string = "Peter";
+/*let nombre:string = "Peter";
 let numero:number=123;
 let booleano:boolean=true;
 
@@ -30,4 +30,16 @@ let calquiera:any;
 let spider= {
     nombre:'hhhhh',
     edad:12
-}
+}*/
+
+//Template Literales
+let nombre:string ="Juan";
+let apellido:string="Perez";
+let edad:number=45;
+
+//let texto:string="Hola "+nombre+" "+apellido+" ("+edad+")";
+let texto=`Hola, ${nombre} ${apellido} (${edad})`;
+
+let texto2:string=`${1+2}` //${aqui puede estar codigo de javascript}
+
+console.log(texto2);
