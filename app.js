@@ -1,5 +1,5 @@
 "use strict";
-//VARIABLES
+//============================================VARIABLES
 /*let mensaje = "hola";
 
 if(true){
@@ -16,7 +16,7 @@ if(true){
 }
 
 console.log(OPCIONES);*/
-//TIPOS
+//============================================TIPOS
 /*let nombre:string = "Peter";
 let numero:number=123;
 let booleano:boolean=true;
@@ -30,7 +30,7 @@ let spider= {
     nombre:'hhhhh',
     edad:12
 }*/
-//Template Literales
+//============================================TEMPLATE LITERALES
 /*let nombre:string ="Juan";
 let apellido:string="Perez";
 let edad:number=45;
@@ -41,7 +41,7 @@ let texto=`Hola, ${nombre} ${apellido} (${edad})`;
 let texto2:string=`${1+2}` //${aqui puede estar codigo de javascript}
 
 console.log(texto2);*/
-//FUNCIONES
+//============================================FUNCIONES
 //parametro por defecto: variable?:string
 /*function activar(quien:string,objeto:string="batiseñal",momento?:string){
     let mensaje:string;
@@ -56,7 +56,7 @@ console.log(texto2);*/
 }
 
 activar("Gordon,");*/
-//funciones flechas
+//============================================FUNCIONES FLECHAS
 /*let funcion=function(a:number,b:number){
     return a+b;
 }
@@ -81,19 +81,35 @@ let hulk2={
 
 hulk.smash();
 hulk2.smash();*/
-//DESTRUCTURACION DE OBJETOS
+//============================================DESTRUCTURACION DE OBJETOS
 //Objetos
-let avenger = {
-    nombre: "Steve",
-    clave: "Capitan america",
-    poder: "dorga"
-};
-let { nombre, poder, clave } = avenger;
+/*let avenger={
+    nombre:"Steve",
+    clave:"Capitan america",
+    poder:"dorga"
+}
+let{nombre,poder,clave}=avenger;
 /*let nombre=avenger.nombre;
 let clave=avenger.clave;
 let poder=avenger.poder;*/
-console.log(nombre, clave, poder);
+/*console.log(nombre,clave,poder);
+
 //Arreglo
-let avengers = ["thor", "steve", "tony"];
-let [var1, var2, var3] = avengers;
-console.log(var1, var2, var3);
+let avengers:string[]=["thor","steve","tony"];
+let [var1,var2,var3]=avengers;
+console.log(var1,var2,var3);*/
+//============================================PROMESAS
+let prom1 = new Promise(function (resolve, reject) {
+    setTimeout(() => {
+        console.log("Promesa Terminada");
+        //Termina bien
+        resolve();
+        //termina mal
+        //reject();
+    }, 1500);
+});
+prom1.then(function () {
+    console.log("Ejecutar si todo sale bien");
+}, function () {
+    console.log("Ejecutar si todo sale mal");
+});

@@ -91,7 +91,7 @@ hulk2.smash();*/
 
 //============================================DESTRUCTURACION DE OBJETOS
 //Objetos
-let avenger={
+/*let avenger={
     nombre:"Steve",
     clave:"Capitan america",
     poder:"dorga"
@@ -100,9 +100,29 @@ let{nombre,poder,clave}=avenger;
 /*let nombre=avenger.nombre;
 let clave=avenger.clave;
 let poder=avenger.poder;*/
-console.log(nombre,clave,poder);
+/*console.log(nombre,clave,poder);
 
 //Arreglo
 let avengers:string[]=["thor","steve","tony"];
 let [var1,var2,var3]=avengers;
-console.log(var1,var2,var3);
+console.log(var1,var2,var3);*/
+
+//============================================PROMESAS
+let prom1 = new Promise( function(resolve,reject){
+
+    setTimeout(()=>{
+        console.log("Promesa Terminada");
+        //Termina bien
+        resolve();
+
+        //termina mal
+        //reject();
+    },1500)
+});
+
+prom1.then(function(){
+    console.log("Ejecutar si todo sale bien");
+},
+function(){
+    console.log("Ejecutar si todo sale mal");
+});
