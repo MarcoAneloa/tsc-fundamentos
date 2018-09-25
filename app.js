@@ -64,19 +64,36 @@ activar("Gordon,");*/
 let funcinf=(a:number,b:number) => a+b;
 */
 //let nombre="perdro";
-let hulk = {
-    nombre: "hulk",
-    smash() {
-        setTimeout(function () {
+/*let hulk={
+    nombre:"hulk",
+    smash(){
+        setTimeout(function(){
             console.log(hulk.nombre + " smash!!!");
-        }, 1500);
+        },1500);
     }
-};
-let hulk2 = {
-    nombre: "hulk",
-    smash() {
-        setTimeout(() => console.log(hulk.nombre + " smash!!!"), 1500);
+}
+let hulk2={
+    nombre:"hulk",
+    smash(){
+        setTimeout(()=> console.log(hulk.nombre + " smash!!!"),1500);
     }
-};
+}
+
 hulk.smash();
-hulk2.smash();
+hulk2.smash();*/
+//DESTRUCTURACION DE OBJETOS
+//Objetos
+let avenger = {
+    nombre: "Steve",
+    clave: "Capitan america",
+    poder: "dorga"
+};
+let { nombre, poder, clave } = avenger;
+/*let nombre=avenger.nombre;
+let clave=avenger.clave;
+let poder=avenger.poder;*/
+console.log(nombre, clave, poder);
+//Arreglo
+let avengers = ["thor", "steve", "tony"];
+let [var1, var2, var3] = avengers;
+console.log(var1, var2, var3);
