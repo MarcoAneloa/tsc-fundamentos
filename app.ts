@@ -108,7 +108,7 @@ let [var1,var2,var3]=avengers;
 console.log(var1,var2,var3);*/
 
 //============================================PROMESAS
-let prom1 = new Promise( function(resolve,reject){
+/*let prom1 = new Promise( function(resolve,reject){
 
     setTimeout(()=>{
         console.log("Promesa Terminada");
@@ -125,4 +125,39 @@ prom1.then(function(){
 },
 function(){
     console.log("Ejecutar si todo sale mal");
-});
+});*/
+
+//============================================INTERFACES
+interface Xmen{
+    nombre:string,
+    poder:string
+}
+
+function enviarMision(xmen:Xmen){
+    console.log("Enviando a"+xmen.nombre);
+}
+
+let wolverine:Xmen={
+    nombre:"Wolverine",
+    poder:"Regeneracion"
+};
+
+//===============================================POO
+class Avenger{
+    nombre:string="dfffs";
+    equipo:string="fgffgfghfg";
+    nombreReal:string="hfhjfjhfjh";
+
+    puedePelear:boolean=false;
+    peleasGanadas:number=0;
+
+    constructor(nombre:string, equipo:string, nombreReal: string){
+        this.nombre=nombre;
+        this.equipo=equipo;
+        this.nombreReal=nombreReal;
+        console.log("Se ejecuto el constructor");
+    }
+}
+
+let antman:Avenger=new Avenger("l","ll","lll");
+console.log(antman);
