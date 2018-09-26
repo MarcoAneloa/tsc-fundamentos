@@ -62,6 +62,7 @@ console.log(texto2);*/
 activar("Gordon,");*/
 
 //============================================FUNCIONES FLECHAS
+//cual es la principal ventaja de las funciones flechas => No modifica el objeto this al ser ejecutada.
 /*let funcion=function(a:number,b:number){
     return a+b;
 }
@@ -69,25 +70,25 @@ activar("Gordon,");*/
 let funcinf=(a:number,b:number) => a+b;
 */
 
-//let nombre="perdro";
+let nombre="perdro";
 
-/*let hulk={
+let hulk={
     nombre:"hulk",
     smash(){
         setTimeout(function(){
-            console.log(hulk.nombre + " smash!!!");
+            console.log(this.nombre + " smash!!!");
         },1500);
     }
 }
 let hulk2={
     nombre:"hulk",
     smash(){
-        setTimeout(()=> console.log(hulk.nombre + " smash!!!"),1500);
+        setTimeout(()=> console.log(this.nombre + " smash!!!"),1500);
     }
 }
 
 hulk.smash();
-hulk2.smash();*/
+hulk2.smash();
 
 //============================================DESTRUCTURACION DE OBJETOS
 //Objetos
@@ -128,7 +129,7 @@ function(){
 });*/
 
 //============================================INTERFACES
-interface Xmen{
+/*interface Xmen{
     nombre:string,
     poder:string
 }
@@ -140,10 +141,10 @@ function enviarMision(xmen:Xmen){
 let wolverine:Xmen={
     nombre:"Wolverine",
     poder:"Regeneracion"
-};
+};*/
 
 //===============================================POO
-class Avenger{
+/*class Avenger{
     nombre:string="dfffs";
     equipo:string="fgffgfghfg";
     nombreReal:string="hfhjfjhfjh";
@@ -160,4 +161,4 @@ class Avenger{
 }
 
 let antman:Avenger=new Avenger("l","ll","lll");
-console.log(antman);
+console.log(antman);*/
